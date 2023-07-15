@@ -9,8 +9,7 @@
 | `font` | Specify the font style for displaying text.|
 | `foreground` | Specify the color of the text.|
 | `image` | Specify an image or images to show in addition to text or instead of text.|
-| `justify` |If the text contains newline characters, the justify option specifies how each line is positioned horizontally.
-The valid values are tk.LEFT (left-justify), tk.CENTER (center), and tk.RIGHT (right-justify).|
+| `justify` |If the text contains newline characters, the justify option specifies how each line is positioned horizontally.The valid values are tk.LEFT (left-justify), tk.CENTER (center), and tk.RIGHT (right-justify).|
 | `padding` | 	Add more space around the label.|
 | `relief` | Use this option to create an effect for the Label .e.g, flat, raised, sunken, groove, and ridge.|
 | `style` | 	Specify the custom widget style.|
