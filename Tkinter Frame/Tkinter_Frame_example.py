@@ -6,8 +6,6 @@ def create_input_frame(container):
 
     frame = ttk.Frame(container)
 
-    # grid layout for the input frame
-    frame.columnconfigure(0, weight=1)
 
     # Find what
     ttk.Label(frame, text='Find what:').grid(column=0, row=0, sticky=tk.W)
