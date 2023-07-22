@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import TclError, ttk
+from tkinter import  ttk
 
 
 def create_input_frame(container):
@@ -8,7 +8,6 @@ def create_input_frame(container):
 
     # grid layout for the input frame
     frame.columnconfigure(0, weight=1)
-    frame.columnconfigure(0, weight=3)
 
     # Find what
     ttk.Label(frame, text='Find what:').grid(column=0, row=0, sticky=tk.W)
@@ -65,11 +64,7 @@ def create_main_window():
     root = tk.Tk()
     root.title('Replace')
     root.resizable(0, 0)
-    try:
-        # windows only (remove the minimize/maximize button)
-        root.attributes('-toolwindow', True)
-    except TclError:
-        print('Not supported on your platform')
+
 
     # layout on the root window
     root.columnconfigure(0, weight=4)
