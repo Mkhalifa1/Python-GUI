@@ -5,6 +5,8 @@ from tkinter import  ttk
 def create_input_frame(container):
 
     frame = ttk.Frame(container)
+    frame['relief']='flat'
+    frame['borderwidth']=20
 
 
     # Find what
@@ -44,6 +46,8 @@ def create_input_frame(container):
 
 def create_button_frame(container):
     frame = ttk.Frame(container)
+    frame['relief']='sunken'
+    frame['borderwidth']=20
 
     frame.columnconfigure(0, weight=1)
 
