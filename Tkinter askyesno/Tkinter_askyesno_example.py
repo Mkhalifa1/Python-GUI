@@ -17,7 +17,7 @@ def confirm():
 
 ttk.Button(
     root,
-    text='Ask Yes/No',
+    text='Quit',
     command=confirm).pack(expand=True)
 
 
