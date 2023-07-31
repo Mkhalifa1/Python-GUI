@@ -18,8 +18,8 @@ file_menu = Menu(
 )
 
 # add menu items to the File menu
-file_menu.add_command(label='New')
-file_menu.add_command(label='Open...')
+file_menu.add_command(label='New', accelerator='Ctrl+N')
+file_menu.add_command(label='Open', accelerator='Ctrl+O')
 file_menu.add_command(label='Close')
 file_menu.add_separator()
 
@@ -38,14 +38,13 @@ file_menu.add_cascade(
 file_menu.add_separator()
 file_menu.add_command(
     label='Exit',
-    command=root.destroy
+    command=root.destroy,
 )
 
 
 menubar.add_cascade(
     label="File",
     menu=file_menu,
-    underline=0
 )
 # create the Help menu
 help_menu = Menu(
@@ -54,13 +53,14 @@ help_menu = Menu(
 )
 
 help_menu.add_command(label='Welcome')
-help_menu.add_command(label='About...')
+help_menu.add_command(label='About')
 
 # add the Help menu to the menubar
 menubar.add_cascade(
     label="Help",
     menu=help_menu,
-    underline=0
+
 )
+
 
 root.mainloop()
