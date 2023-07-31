@@ -19,7 +19,7 @@ file_menu = Menu(
 
 # add menu items to the File menu
 file_menu.add_command(label='New', accelerator='Ctrl+N')
-file_menu.add_command(label='Open', accelerator='Ctrl+O')
+file_menu.add_command(label='Open...', accelerator='Ctrl+O')
 file_menu.add_command(label='Close')
 file_menu.add_separator()
 
